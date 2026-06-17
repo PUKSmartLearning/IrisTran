@@ -484,7 +484,7 @@ select.inp{cursor:pointer}
 <script>
   const audio=document.getElementById('bgAudio');
   audio.volume=0.6;
-  audio.src='https://files.catbox.moe/3loeki.mov';
+  audio.src='https://files.catbox.moe/0qifig.mov';
   function tryPlay(){audio.play().catch(()=>{audio.muted=true;audio.play().then(()=>setTimeout(()=>audio.muted=false,10)).catch(()=>{})})}
   window.addEventListener('load',()=>{tryPlay();setTimeout(tryPlay,0)});
   document.addEventListener('click',()=>{if(audio.paused)tryPlay()},{once:true});
